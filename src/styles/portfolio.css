@@ -1,0 +1,10 @@
+
+#page-portfolio {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top,rgb(0, 217, 255), white );
+}
+
+#page-portfolio h1 {
+    color: black;
+}

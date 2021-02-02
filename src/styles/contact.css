@@ -1,0 +1,59 @@
+#page-contact {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, rgb(0, 255, 242), white);
+}
+
+#page-contact .sidebar h1{
+    color: black;
+}
+
+#page-contact .page-contacts {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "logo contacts";
+}
+
+#page-contact .page-contacts .page-logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#page-contact .page-contacts .page-logo h1{
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 72px;
+    font-weight: 500;
+    text-shadow: .08em .09em 0.08em rgb(173, 173, 173);
+}
+
+#page-contact .page-contacts .page-links {
+    grid-area: contacts;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+#page-contact .page-contacts .page-links h1 {
+    margin: 0px 0px 25px 40px;
+    text-shadow: 0.08em 0.01em 0.02em white;
+    font-family: 'Prompt', sans-serif;
+    font-size: 70px;
+}
+
+#page-contact .page-contacts .page-links h2 {
+    display: flex;
+    margin-top: 0;
+    line-height: 2.2;
+    align-items: center;
+
+    font-family: 'Varta', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+#page-contact .page-contacts .page-links svg {
+    margin-right: 18px;
+}

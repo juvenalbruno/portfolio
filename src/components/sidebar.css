@@ -1,0 +1,28 @@
+#sidebar {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: rgba( 0, 0, 0, 0.02);
+}
+
+.logo {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 155px;
+
+}
+
+.logo h1 {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.link {
+    width: 50%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-around ;
+}
