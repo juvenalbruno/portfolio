@@ -16,6 +16,7 @@ h2 {
 
 #page-about .sidebar h1 {
     color: white;
+    text-shadow: 0.05em 0.01em 0.1em black;
 }
 
 #page-about {

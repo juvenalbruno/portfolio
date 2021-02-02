@@ -6,6 +6,7 @@
 
 #page-contact .sidebar h1{
     color: black;
+    text-shadow: 0.05em 0.01em 0.1em white;
 }
 
 #page-contact .page-contacts {

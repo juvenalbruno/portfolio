@@ -1,10 +1,31 @@
-
 #page-portfolio {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(to top,rgb(0, 217, 255), white );
 }
 
+#page-portfolio .sidebar {
+    padding-bottom: 150px;
+}
+
 #page-portfolio h1 {
-    color: black;
+    color: white;
+    text-shadow: 0.05em 0.01em 0.1em black;
+}
+
+#page-portfolio .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+ 
+}
+
+#page-portfolio .container img {
+    height: 220px;
+    width: 400px;
+    box-shadow: 0.05em 0.05em 1em black;
+    border-radius: 3px;
+    margin: 18px;
 }

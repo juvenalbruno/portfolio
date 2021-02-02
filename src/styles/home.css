@@ -1,12 +1,12 @@
 #page-home h1 {
     color: white;
+    text-shadow: 0.05em 0.01em 0.1em black;
 }
 
 #page-home {
     height: 100vh;
     width: 100vw;
-    /* background: linear-gradient(to bottom, black, rgb(31, 31, 170) ,rgb(0, 204, 255), white); */
-    background: linear-gradient(to top, rgb(0, 238, 255), rgb(43, 43, 43));
+    background: linear-gradient(to top, rgb(0, 26, 255), white);
 }
 
 #page-home .content {
