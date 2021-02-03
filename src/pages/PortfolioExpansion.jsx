@@ -2,16 +2,8 @@ import React from 'react';
 import { FiLogOut } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import '../styles/portfolioExpansion.css';
-import db from '../db.json';
-
-import BD from '../assets/ecoleta.png'
-import BD2 from '../assets/ecoleta2.png'
-import BD3 from '../assets/ecoleta3.png'
-import BD4 from '../assets/ecoleta4.png'
 
 export default function PortfolioExpansion(props) {
-    
-
     return(
         <div id="page-portfolioExtension">
             <div className="sidebar">
@@ -23,13 +15,13 @@ export default function PortfolioExpansion(props) {
                     />
                     <p>Voltar para Portfólio</p>
                 </Link>
-                <h1>Ecoleta</h1>
+                <h1>{props.name}</h1>
             </div>
             <div className="container">
-                <img src={db.imgs.Ecoleta.img1} alt="Ecoleta"/>
-                <img src={BD2} alt="Ecoleta"/>
-                <img src={BD3} alt="Ecoleta"/>
-                <img src={BD4} alt="Ecoleta"/>
+                <img src={`https://github.com/juvenalbruno/portfolio/blob/master/src/assets/${props.name}.png`} alt={props.name}/>
+                <img src={`https://github.com/juvenalbruno/portfolio/blob/master/src/assets/${props.name}2.png`} alt={props.name}/>
+                <img src={`https://github.com/juvenalbruno/portfolio/blob/master/src/assets/${props.name}3.png`} alt={props.name}/>
+                <img src={`https://github.com/juvenalbruno/portfolio/blob/master/src/assets/${props.name}4.png`} alt={props.name}/>
             </div>
         </div>
     )

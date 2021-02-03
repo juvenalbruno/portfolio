@@ -16,11 +16,21 @@ export default function Portfolio() {
                 <Sidebar />
             </div>
             <div className="container">
-                <Link to="/portfolio/expansion"><img src={Quiz} alt="Quiz"/></Link>
-                <Link to="/portfolio/expansion"><img src={Juflix} alt="Juflix"/></Link>
-                <Link to="/portfolio/expansion"><img src={Ecoleta} alt="Ecoleta"/></Link>
-                <Link to="/portfolio/expansion"><img src={Happy} alt="Happy"/></Link>
-                <Link to="/portfolio/expansion"><img src={BeTheHero} alt="BeTheHero"/></Link>
+                <Link to="/portfolio/expansion">
+                    <img src={Quiz} alt="Quiz"/>
+                </Link>
+                <Link to="/portfolio/expansion">
+                    <img src={Juflix} alt="Juflix"/>
+                </Link>
+                <Link to="/portfolio/expansion">
+                    <img src={Ecoleta} alt="Ecoleta"/>
+                </Link>
+                <Link to="/portfolio/expansion">
+                    <img src={Happy} alt="Happy"/>
+                </Link>
+                <Link to="/portfolio/expansion">
+                    <img src={BeTheHero} alt="BeTheHero"/>
+                </Link>
             </div>
         </div>
     )
