@@ -1,0 +1,32 @@
+{
+    "imgs": {
+        "BeTheHero": {
+            "img1": "../assets/BeTheHero.png",
+            "img2": "../assets/BeTheHero2.png",
+            "img3": "../assets/BeTheHero3.png",
+            "img4": "../assets/BeTheHero4.png"
+        },
+        "Ecoleta": {
+           "img1": "https://github.com/juvenalbruno/NLW_01-Ecoleta_v1.0/blob/master/EcoletaPrints/Captura%20de%20tela%202020-11-16%20231027.png?raw=true",
+           "img2": "../assets/ecoleta2.png",
+           "img3": "../assets/ecoleta3.png",
+           "img4": "../assets/ecoleta4.png"
+        },
+        "Happy": {
+            "img1": "../assets/happy.png",
+            "img2": "../assets/happy2.png",
+            "img3": "../assets/happy3.png",
+            "img4": "../assets/happy4.png"
+        },
+        "Juflix": {
+            "img1": "../assets/Juflix.png",
+            "img2": "../assets/Juflix2.png",
+            "img3": "../assets/Juflix3.png",
+            "img4": "../assets/Juflix4.png"
+        },
+
+        "Quiz": {
+            "img1": "../assets/Quiz.png"
+        }
+    }
+}
