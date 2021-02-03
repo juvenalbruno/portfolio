@@ -4,10 +4,11 @@ import '../styles/portfolio.css';
 import { Link } from 'react-router-dom';
 
 import Quiz from '../assets/Quiz.png';
-import Ecoleta from '../assets/ecoleta.png';
-import Happy from '../assets/happy.png';
+import Ecoleta from '../assets/Ecoleta.png';
+import Happy from '../assets/Happy.png';
 import Juflix from '../assets/Juflix.png';
 import BeTheHero from '../assets/BeTheHero.png';
+import PortfolioExpansion from './PortfolioExpansion';
 
 export default function Portfolio() {
     return (
@@ -17,6 +18,7 @@ export default function Portfolio() {
             </div>
             <div className="container">
                 <Link to="/portfolio/expansion">
+                    <PortfolioExpansion name="Quiz" />
                     <img src={Quiz} alt="Quiz"/>
                 </Link>
                 <Link to="/portfolio/expansion">
