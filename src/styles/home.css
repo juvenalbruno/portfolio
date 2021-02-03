@@ -6,7 +6,7 @@
 #page-home {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(to top, rgb(0, 26, 255), white);
+    background: linear-gradient(to top, rgb(0, 140, 255), white);
 }
 
 #page-home .content {

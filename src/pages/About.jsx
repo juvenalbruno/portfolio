@@ -13,7 +13,7 @@ export default function About() {
             <div className="page-content">
                 <div className="about">
                     <h1>Sobre</h1>
-                    <p>Programador Front-End, apaixonado pelas atuais tecnologias de desenvolvimento front-end e mobile.</p>
+                    <p>Desenvolvedor Web apaixonado pelas atuais tecnologias de desenvolvimento front-end e mobile.</p>
                 </div>
                 <div className="carateristics">
                     <h2>Principais Características:</h2>
@@ -31,7 +31,7 @@ export default function About() {
                     <ul>
                         <li><FaReact size={25} /> React.JS</li>
                         <li><FaReact size={25} /> React Native</li>
-                        <li><FaFileCode size={25} /> Node.JS</li>
+                        <li><FaFileCode size={25} /> Next.JS</li>
                         <li><FaHtml5 size={25} /> HTML</li>
                         <li><FaCss3Alt size={25} /> CSS</li>
                         <li><FaJsSquare size={25} /> JavaScript</li>

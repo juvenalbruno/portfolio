@@ -2,10 +2,11 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import '../styles/portfolio.css';
 
-import Quiz from '../assets/quiz.png';
-import Ecoleta from '../assets/ecoleta.png';
-import Happy from '../assets/happy.png';
-import Juflix from '../assets/juflix.png';
+import Quiz from '../assets/PrintScreens/Quiz/Quiz.png';
+import Ecoleta from '../assets/PrintScreens/Ecoleta/ecoleta.png';
+import Happy from '../assets/PrintScreens/Happy/happy.png';
+import Juflix from '../assets/PrintScreens/Juflix/Juflix.png';
+import BeTheHero from '../assets/PrintScreens/BeTheHero/BeTheHero.png';
 
 export default function Portfolio() {
     return (
@@ -18,6 +19,7 @@ export default function Portfolio() {
                 <img src={Juflix} alt="Juflix"/>
                 <img src={Ecoleta} alt="Ecoleta"/>
                 <img src={Happy} alt="Happy"/>
+                <img src={BeTheHero} alt="BeTheHero"/>
             </div>
         </div>
     )
