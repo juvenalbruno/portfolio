@@ -18,25 +18,25 @@ export default function About() {
                 <div className="carateristics">
                     <h2>Principais Características:</h2>
                     <ul>
-                        <li><FaSitemap size={25} /> Organização</li>
-                        <li><FaCog size={25} /> Objetividade</li>
-                        <li><FaHourglassHalf size={25} /> Agilidade</li>
-                        <li><FaPaintBrush size={25} /> Criatividade</li>
-                        <li><FaBookOpen size={25} /> Fácil Aprendizado</li>
-                        <li><FaUsers size={25} /> Trabalho em Equipe</li>
+                        <li><FaSitemap /> Organização</li>
+                        <li><FaCog /> Objetividade</li>
+                        <li><FaHourglassHalf /> Agilidade</li>
+                        <li><FaPaintBrush /> Criatividade</li>
+                        <li><FaBookOpen /> Fácil Aprendizado</li>
+                        <li><FaUsers /> Trabalho em Equipe</li>
                     </ul>
                 </div>
                 <div className="skills">
                     <h2>Habilidades:</h2>
                     <ul>
-                        <li><FaReact size={25} /> React.JS</li>
-                        <li><FaReact size={25} /> React Native</li>
-                        <li><FaFileCode size={25} /> Next.JS</li>
-                        <li><FaHtml5 size={25} /> HTML</li>
-                        <li><FaCss3Alt size={25} /> CSS</li>
-                        <li><FaJsSquare size={25} /> JavaScript</li>
-                        <li><FaFileCode size={25} />TypeScript</li>
-                        <li><FaGitAlt size={25} /> Git</li>
+                        <li><FaReact /> React.JS</li>
+                        <li><FaReact /> React Native</li>
+                        <li><FaFileCode /> Next.JS</li>
+                        <li><FaHtml5 /> HTML</li>
+                        <li><FaCss3Alt /> CSS</li>
+                        <li><FaJsSquare /> JavaScript</li>
+                        <li><FaFileCode />TypeScript</li>
+                        <li><FaGitAlt /> Git</li>
                     </ul>
                 </div>
                 <div className="image">

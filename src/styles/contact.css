@@ -1,6 +1,4 @@
 #page-contact {
-    height: 100vh;
-    width: 100vw;
     background: linear-gradient(to top, rgb(0, 255, 242), white);
 }
 
@@ -13,7 +11,8 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-areas: "logo contacts";
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo links";
 }
 
 #page-contact .page-contacts .page-logo {
@@ -31,7 +30,7 @@
 }
 
 #page-contact .page-contacts .page-links {
-    grid-area: contacts;
+    grid-area: links;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,5 +55,43 @@
     font-size: 24px;
 }
 #page-contact .page-contacts .page-links svg {
-    margin-right: 18px;
+    margin-right: 15px;
+}
+
+@media(max-width: 980px) {
+    #page-contact .page-contacts  {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr;
+        grid-template-areas: 
+            "links"
+            "logo"
+        ;
+    }
+
+    #page-contact .page-contacts .page-links {
+        grid-area: links;
+    }
+    
+    #page-contact .page-contacts .page-links h1 {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        font-size: 42px;
+    }
+    
+    #page-contact .page-contacts .page-links h2 {
+        margin-left: -18px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    #page-contact .page-contacts .page-logo {
+        grid-area: logo;
+    }
+
+    #page-contact .page-contacts .page-logo h1 {
+        font-size: 42px;
+    }
 }

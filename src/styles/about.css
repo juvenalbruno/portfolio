@@ -1,3 +1,6 @@
+#page-about {    
+    background: linear-gradient(to bottom, rgb(0, 204, 255), white);
+}
 #page-about li {
     list-style-type: none;
     font-family: 'Varta', sans-serif;
@@ -19,16 +22,12 @@
     text-shadow: 0.05em 0.01em 0.1em black;
 }
 
-#page-about {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, rgb(0, 204, 255), white);
-}
 
 #page-about .page-content {
     padding-top: 120px;
     display: grid;
     grid-template-columns: 2fr 0.8fr 1.2fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "about skills img"
         "caracteristics skills img"
@@ -37,8 +36,6 @@
 
 #page-about .page-content .about{
     grid-area: about;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +59,6 @@
 
 #page-about .page-content .carateristics {
     grid-area: caracteristics;
-    width: 100%;
-    height: 100%;
     line-height: 1.5;
  
     display: flex;
@@ -86,7 +81,7 @@
 }
 
 .carateristics ul svg, .skills ul svg {
-    margin-right: 18px;
+    margin-right: 15px;
 }
 
 #page-about .page-content .skills ul{
@@ -100,4 +95,86 @@
     justify-content: center;
     margin-top: 30px;
     height: 350px;
+}
+
+@media(max-width: 980px) {
+    #page-about .page-content {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 2fr, 1fr, 1fr;
+        grid-template-areas: 
+            "about img"
+            "caracteristics caracteristics"
+            "skills skills"
+        ;
+    }
+
+    #page-about .page-content .about {
+        grid-area: about;
+        margin: auto;
+    }
+
+    #page-about .page-content .about h1{
+        font-size: 48px;
+    }
+
+    #page-about .page-content .about p{
+        padding: 0px 20px 0px 20px;
+        font-size: 22px;
+        max-width: 350px;        
+    }
+    
+    #page-about .page-content .image {
+        grid-area: img;
+        height: 220px;
+        width: 220px;
+        margin: auto;
+    }
+
+    #page-about .page-content .carateristics {
+        grid-area: caracteristics;
+        margin: auto;
+    }
+    
+    #page-about .page-content .carateristics h2{
+        margin: 25px 0px 15px 0px;
+        font-size: 20px;
+    }
+    
+    #page-about .page-content .carateristics li{
+        font-size: 18px;
+        padding: 0px;
+    }
+
+    #page-about .page-content .carateristics ul {
+        padding: 0px;
+        margin: 0px;
+        column-gap: 0px;
+    }
+
+    #page-about .page-content .skills {
+        grid-area: skills;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #page-about .page-content .skills h2 {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    #page-about .page-content .skills ul  {
+        padding: 0px;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+        column-gap: 10px;
+        margin: 15px;
+    }
+
+    #page-about .page-content .skills li{
+        font-size: 18px;
+    }
 }
