@@ -4,7 +4,7 @@
 }
 
 #page-portfolio .sidebar {
-    padding-bottom: 130px;
+    padding-bottom: 90px;
 }
 
 #page-portfolio h1 {
@@ -28,4 +28,11 @@
     box-shadow: 0.05em 0.05em 1em black;
     border-radius: 3px;
     margin: 18px;
+}
+
+@media(max-width: 860px) {
+    #page-portfolio .container img {
+        height: 170px;
+        width: 290px;
+    }
 }

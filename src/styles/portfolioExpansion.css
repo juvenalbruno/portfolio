@@ -85,7 +85,7 @@
     }
     
     #page-portfolioExtension .sidebar h1{
-        font-size: 38px;
+        font-size: 28px;
     }
     
     #page-portfolioExtension .sidebar a{
@@ -95,4 +95,10 @@
     #page-portfolioExtension .container{
         grid-area: img;
     }
+
+    #page-portfolioExtension .container img{
+            height: 170px;
+            width: 290px;
+    }
 }
+
