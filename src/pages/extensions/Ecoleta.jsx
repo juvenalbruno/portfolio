@@ -13,6 +13,8 @@ export default function PortfolioExpansion() {
             <div className="sidebar">
                 <Button />
                 <h1>Ecoleta</h1>
+                {/* <p>Aqui vou colocar alguma coisa!! (Alguma Coisa)</p>
+                <p>Link dorepositorio ou alguma informação que contribua para o entendimento do objetivo do projeto.</p> */}
             </div>
             <div className="container">
                 <img src={Img1} alt="BetheHero"/>

@@ -11,9 +11,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
 
 #page-portfolioExtension .sidebar p {
@@ -67,4 +65,34 @@
     box-shadow: 0.05em 0.05em 1em black;
     border-radius: 3px;
     margin: 18px;
+}
+
+@media(max-width: 860px) {
+    #page-portfolioExtension {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto; 
+        grid-template-areas: 
+            "info"
+            "img"
+        ;
+    }
+
+    #page-portfolioExtension .sidebar{
+        grid-area: info;
+        height: 120px;
+        margin-bottom: 18px;   
+    }
+    
+    #page-portfolioExtension .sidebar h1{
+        font-size: 38px;
+    }
+    
+    #page-portfolioExtension .sidebar a{
+        padding: 10px;
+    }
+
+    #page-portfolioExtension .container{
+        grid-area: img;
+    }
 }
