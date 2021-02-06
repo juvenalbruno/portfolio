@@ -3,21 +3,38 @@ import Sidebar from '../components/Sidebar';
 import '../styles/portfolio.css';
 
 import CapaQuiz from '../assets/CapaQuiz.png';
-import Quiz from '../assets/Quiz.png';
+import Quiz2 from '../assets/Quiz2.png';
+import Quiz3 from '../assets/Quiz3.png';
+import Quiz4 from '../assets/Quiz4.png';
+
 import CapaEcoleta from '../assets/CapaEcoleta.png';
-import Ecoleta from '../assets/Ecoleta.png';
+import Ecoleta2 from '../assets/Ecoleta2.png';
+import Ecoleta3 from '../assets/Ecoleta3.png';
+import Ecoleta4 from '../assets/Ecoleta4.png';
+
 import CapaHappy from '../assets/CapaHappy.png';
-import Happy from '../assets/Happy.png';
+import Happy2 from '../assets/Happy2.png';
+import Happy3 from '../assets/Happy3.png';
+import Happy4 from '../assets/Happy4.png';
+
 import CapaJuflix from '../assets/CapaJuflix.png';
-import Juflix from '../assets/Juflix.png';
+import Juflix2 from '../assets/Juflix2.png';
+import Juflix3 from '../assets/Juflix3.png';
+import Juflix4 from '../assets/Juflix4.png';
+
 import CapaBeTheHero from '../assets/CapaBeTheHero.png';
-import BeTheHero from '../assets/BeTheHero.png';
+import BeTheHero2 from '../assets/BeTheHero2.png';
+import BeTheHero3 from '../assets/BeTheHero3.png';
+import BeTheHero4 from '../assets/BeTheHero4.png';
 
 import { FaArrowCircleLeft } from 'react-icons/fa';
 
 export default function Portfolio() {
     const [Visibility, setVisibility] = useState(false);
-    const [imgId, setImgId] = useState();
+    const [imgId0, setImgId0] = useState();
+    const [imgId1, setImgId1] = useState();
+    const [imgId2, setImgId2] = useState();
+    const [imgId3, setImgId3] = useState();
 
     return (
         <div id="page-portfolio">
@@ -27,13 +44,19 @@ export default function Portfolio() {
 
             <div className="modal" style={Visibility ? { visibility:'visible' } : { visibility: 'hidden' }}>
                 <div className="modal_content">
-                    <img src={imgId} alt="" className="modal_img"/>
+                    <img src={imgId0} alt="" className="modal_img"/>
+                    <img src={imgId1} alt="" className="modal_img"/>
+                    <img src={imgId2} alt="" className="modal_img"/>
+                    <img src={imgId3} alt="" className="modal_img"/>
                 </div>
                 <button 
                     className="btn_close" 
                     onClick={() => {
                         setVisibility(false)
-                        setImgId('')
+                        setImgId0('')
+                        setImgId1('')
+                        setImgId2('')
+                        setImgId3('')
                     }}
                 >
                     <FaArrowCircleLeft size={20} />
@@ -48,7 +71,10 @@ export default function Portfolio() {
                         alt="Quiz"
                         onClick={() => {
                             setVisibility(true)
-                            setImgId(Quiz)
+                            setImgId0(CapaQuiz)
+                            setImgId1(Quiz2)
+                            setImgId2(Quiz3)
+                            setImgId3(Quiz4)
                         }}
                     />
                 </div>
@@ -58,7 +84,10 @@ export default function Portfolio() {
                         alt="Juflix"
                         onClick={() => {
                             setVisibility(true)
-                            setImgId(Juflix)
+                            setImgId0(CapaJuflix)
+                            setImgId1(Juflix2)
+                            setImgId2(Juflix3)
+                            setImgId3(Juflix4)
                         }}
                     />
                 </div>
@@ -68,7 +97,10 @@ export default function Portfolio() {
                         alt="Ecoleta"
                         onClick={() => {
                             setVisibility(true)
-                            setImgId(Ecoleta)
+                            setImgId0(CapaEcoleta)
+                            setImgId1(Ecoleta2)
+                            setImgId2(Ecoleta3)
+                            setImgId3(Ecoleta4)
                         }}
                     />
                 </div>
@@ -78,7 +110,10 @@ export default function Portfolio() {
                         alt="Happy"
                         onClick={() => {
                             setVisibility(true)
-                            setImgId(Happy)
+                            setImgId0(CapaHappy)
+                            setImgId1(Happy2)
+                            setImgId2(Happy3)
+                            setImgId3(Happy4)
                         }}
                     />
                 </div>
@@ -88,7 +123,10 @@ export default function Portfolio() {
                         alt="Be The hero"
                         onClick={() => {
                             setVisibility(true)
-                            setImgId(BeTheHero)
+                            setImgId0(CapaBeTheHero)
+                            setImgId1(BeTheHero2)
+                            setImgId2(BeTheHero3)
+                            setImgId3(BeTheHero4)
                         }}
                     />
                 </div>

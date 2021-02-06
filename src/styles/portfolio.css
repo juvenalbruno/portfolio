@@ -11,22 +11,30 @@
 #page-portfolio .modal  {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(0, 0, 0, 0.37);
     position: fixed;
 }
 
 #page-portfolio .modal_content  {
+    padding-top: 85px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-content: stretch;
+    align-items: stretch;
+ 
+}
+#page-portfolio .modal .modal_content img  {
+    margin-right: 15px;
+    margin-left: px;
+    margin-top: 15px;
 }
 
 #page-portfolio .modal .modal_content .modal_img {
-    width: 80vw;
-    background-color: rgba(0, 0, 0, 0.384);
-    box-shadow: black 0.1em 0.1em 15em;
-    border-radius: 15px;
+    box-shadow: rgba(67, 60, 165, 0.603) 0.1em 0.1em 2em;
+    border-radius: 10px;
+    height: 265px;
+    width: 480px;
 }
 
 #page-portfolio .modal .btn_close svg {
