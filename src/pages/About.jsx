@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPaperclip, FaSitemap, FaHourglassHalf, FaCog, FaBookOpen, FaPaintBrush, FaUsers, FaHtml5, FaCss3Alt, FaReact, FaJsSquare, FaFileCode, FaGitAlt, FaCode } from 'react-icons/fa';
-import Image from '../assets/img.png';
+import Image from '../assets/img.svg';
 import '../styles/about.css';
 
 export default function About() {

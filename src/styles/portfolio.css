@@ -14,49 +14,6 @@
     padding-bottom: 20px;
 }
 
-#page-portfolio .modal  {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.37);
-    position: fixed;
-}
-
-#page-portfolio .modal_content  {
-    padding-top: 85px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
- 
-}
-#page-portfolio .modal .modal_content img  {
-    margin: 15px 15px 0px 0px;
-}
-
-#page-portfolio .modal .modal_content .modal_img {
-    box-shadow: rgba(67, 60, 165, 0.603) 0.1em 0.1em 2em;
-    border-radius: 10px;
-    height: 260px;
-    width: 500px;
-}
-
-#page-portfolio .modal .btn_close svg {
-    margin-right: 8px;
-}
-#page-portfolio .modal .btn_close {
-    color: rgb(255, 255, 255);
-    background: rgba(0, 0, 0, 0.863);
-    position: absolute;
-    right: 40px;
-    top: 20px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 10px 5px 5px;
-    border: 1px solid white;
-}
 
 #page-portfolio .container {
     display: flex;

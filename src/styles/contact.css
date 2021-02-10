@@ -47,6 +47,8 @@
 }
 #page-contact .page-links svg {
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }
 
 @media(max-width: 980px) {
