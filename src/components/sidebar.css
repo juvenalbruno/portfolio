@@ -69,9 +69,13 @@
         font-size: 18px;
         display: flex;
         padding: 10px 15px 5px 0px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
+    #sidebar .link {
+        margin-left: 15px;
+
+    }
     #sidebar .link .conect {
         display: none;
     }
