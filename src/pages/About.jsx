@@ -35,7 +35,7 @@ export default function About() {
                 </ul>
             </div>
             <div className="image">
-                <img src={Image} alt="Juvenal Bruno" />
+                <img src={Image} alt="Juvenal Bruno" />s
             </div>
         </div>
     )

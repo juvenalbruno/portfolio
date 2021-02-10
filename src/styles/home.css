@@ -37,13 +37,15 @@
 
 @media(max-width: 900px) {
     #page-home .text{
-        padding: 0px 40px 0px 55px;
+        
     }
 
     #page-home .text h1{
-        font-size: 48px;
+        margin-left: 30px;
+        font-size: 42px;
     }
     #page-home .text h2{
-        font-size: 30px;
+        margin-left: 30px;
+        font-size: 28px;
     }
 }
