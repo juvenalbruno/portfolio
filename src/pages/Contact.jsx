@@ -10,11 +10,11 @@ export default function Contact() {
             </div>
             <div className="page-links">
                 <h1>Contatos:</h1>
-                <h2><FaEnvelope size={30} /> bruno.andrade178@hotmail.com</h2>
-                <h2><FaGithub size={30} /> github.com/juvenalbruno</h2>
-                <h2><FaLinkedin size={30} /> Juvenal Bruno Andrade</h2>
-                <h2><FaInstagram size={30} /> @jovem.developer</h2>
-            </div>
+                <h2><a target="blank" href='https://outlook.live.com/'><FaEnvelope size={25} color={'rgb(0, 10, 143)'} /></a> bruno.andrade178@hotmail.com</h2>
+                <h2><a target="blank" href='https://github.com/juvenalbruno/'><FaGithub size={25} color={'rgb(116, 10, 255)'}/></a>github.com/juvenalbruno</h2>
+                <h2><a target="blank" href='https://www.linkedin.com/in/juvenal-bruno-andrade-b6769b190/'><FaLinkedin size={25} color={'rgb(0, 4, 255)'} /></a> Juvenal Bruno Andrade</h2>
+                <h2><a target="blank" href='https://www.instagram.com/jovem.developer/?hl=pt-br/'><FaInstagram size={25} color={'rgb(151, 35, 0)'} /></a>@jovem.developer</h2>
+            </div>   
         </div>
     )
 }
