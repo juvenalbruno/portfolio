@@ -36,8 +36,8 @@
 }
 
 @media(max-width: 900px) {
-    #page-home .text{
-        
+    #page-home footer{
+        display: none;
     }
 
     #page-home .text h1{
