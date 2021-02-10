@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
 import '../styles/portfolio.css';
 
 import CapaQuiz from '../assets/CapaQuiz.png';
@@ -38,10 +37,7 @@ export default function Portfolio() {
 
     return (
         <div id="page-portfolio">
-            <div className="sidebar">
-                <Sidebar />
-            </div>
-
+            <h1>Portfólio</h1>
             <div className="modal" style={Visibility ? { visibility:'visible' } : { visibility: 'hidden' }}>
                 <div className="modal_content">
                     <img src={imgId0} alt="" className="modal_img"/>

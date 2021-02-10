@@ -1,5 +1,5 @@
-#page-about {    
-    background: linear-gradient(to bottom, rgb(0, 204, 255), white);
+#page-about {   
+    min-height: 100vh; 
 }
 #page-about li {
     list-style-type: none;
@@ -8,23 +8,23 @@
     display: flex;
     align-items: center;
     line-height: 2;
+    color: white;
+}
+
+#page-about li svg {
+    color: #00c2fd;
 }
 
 #page-about h2 {
-    color:black;
-    font-family: 'Prompt', sans-serif;
+    color:#ffffff;
+    text-shadow: 0.0em 0.0em .2em rgba(167, 0, 0, 0.849);
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
     font-size: 24px;
-    margin-top: 50px;
-}
-
-#page-about .sidebar h1 {
-    color: white;
-    text-shadow: 0.05em 0.01em 0.1em black;
 }
 
 
-#page-about .page-content {
-    padding-top: 120px;
+#page-about {
     display: grid;
     grid-template-columns: 2fr 0.8fr 1.2fr;
     grid-template-rows: repeat(2, auto);
@@ -34,30 +34,31 @@
     ;
 }
 
-#page-about .page-content .about{
+#page-about .about{
     grid-area: about;
     display: flex;
+    padding-top: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#page-about .page-content .about h1{
-    text-shadow: white 0.05em 0.01em 0.02em;
-    color:black;
+#page-about .about h1{
+    text-shadow: 0.0em 0.0em .2em rgba(167, 0, 0, 0.849);
+    color:rgb(255, 255, 255);
     font-family: 'Prompt', sans-serif;
-    font-size: 74px;
+    font-size: 52px;
 }
 
-#page-about .page-content .about p{
-    color:black;
+#page-about .about p{
+    color:rgb(255, 255, 255);
     font-family: 'Varta', sans-serif;
     text-align: center;
     font-size: 24px;
     padding: 0px 150px 0px 150px;
 }
 
-#page-about .page-content .carateristics {
+#page-about .carateristics {
     grid-area: caracteristics;
     line-height: 1.5;
  
@@ -66,8 +67,17 @@
     align-items: center;
     justify-content: center;
 }
+#page-about .carateristics h2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
 
-#page-about .page-content .carateristics ul  {
+#page-about .carateristics h2 svg{
+    padding-right: 10px;
+}
+
+#page-about .carateristics ul  {
     margin: 20px 0px 0px 70px;
     -moz-column-count: 2;
     -webkit-column-count: 2;
@@ -75,30 +85,46 @@
     column-gap: 20px;
 }
 
-#page-about .page-content .skills {
-    grid-area: skills
-    
+#page-about .skills {
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-about .skills h2 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#page-about .skills h2 svg{
+    padding-right: 10px;
 }
 
 .carateristics ul svg, .skills ul svg {
     margin-right: 15px;
 }
 
-#page-about .page-content .skills ul{
-    margin-top: 25px;
+#page-about .skills ul{
+    margin-top: 20px;
     
 }
 
-#page-about .page-content .image {
+#page-about .image {
     grid-area: img;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    height: 350px;
+    align-items: center;
 }
-
+#page-about .image img {
+    border-radius: 20%;
+    height: 350px;
+    
+}
 @media(max-width: 980px) {
-    #page-about .page-content {
+    #page-about {
+        padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: 2fr, 1fr, 1fr;
@@ -109,50 +135,56 @@
         ;
     }
 
-    #page-about .page-content .about {
+    #page-about .about {
         grid-area: about;
         margin: auto;
     }
 
-    #page-about .page-content .about h1{
+    #page-about .about h1{
         font-size: 48px;
     }
 
-    #page-about .page-content .about p{
+    #page-about .about p{
         padding: 0px 20px 0px 20px;
         font-size: 22px;
         max-width: 350px;        
     }
     
-    #page-about .page-content .image {
-        grid-area: img;
-        height: 220px;
-        width: 220px;
-        margin: auto;
+    #page-about .image {
+        grid-area: img;  
+        padding-top: 100px;
     }
 
-    #page-about .page-content .carateristics {
+    #page-about .image img {
+        height: 150px;
+        width: 140px;
+        display: flex;
+        bottom: 0;
+        border-radius: 50%;
+    }
+
+    #page-about .carateristics {
         grid-area: caracteristics;
         margin: auto;
     }
     
-    #page-about .page-content .carateristics h2{
+    #page-about .carateristics h2{
         margin: 25px 0px 15px 0px;
         font-size: 20px;
     }
     
-    #page-about .page-content .carateristics li{
+    #page-about .carateristics li{
         font-size: 18px;
         padding: 0px;
     }
 
-    #page-about .page-content .carateristics ul {
+    #page-about .carateristics ul {
         padding: 0px;
         margin: 0px;
         column-gap: 0px;
     }
 
-    #page-about .page-content .skills {
+    #page-about .skills {
         grid-area: skills;
         margin: auto;
         display: flex;
@@ -160,12 +192,12 @@
         align-items: center;
     }
     
-    #page-about .page-content .skills h2 {
+    #page-about .skills h2 {
         margin-top: 25px;
         font-size: 20px;
     }
 
-    #page-about .page-content .skills ul  {
+    #page-about .skills ul  {
         padding: 0px;
         -moz-column-count: 2;
         -webkit-column-count: 2;
@@ -174,7 +206,7 @@
         margin: 15px;
     }
 
-    #page-about .page-content .skills li{
+    #page-about .skills li{
         font-size: 18px;
     }
 }

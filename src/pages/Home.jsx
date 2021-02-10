@@ -1,18 +1,17 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar';
-import '../styles/home.css'
+import '../styles/home.css';
+import { FiChevronDown } from 'react-icons/fi';
 
 export default function Home() {
-    return(
+    return (
         <div id="page-home">
-           <div className="sidebar">
-                <Sidebar />
+            <div className="text">
+                <h1>Desenvolvedor Front-End</h1>
+                <h2>Criação e Desenvolvimento Web / Mobile.</h2>
             </div>
-
-            <div className="content">
-                <h1>Juvenal Bruno</h1>
-                <h2>Desenvolvedor Front-End</h2>
-            </div>
+            <footer>
+                <a href="#about" style={{color: 'black'}}><FiChevronDown size={58}/></a>
+            </footer>
         </div>
     );
 }

@@ -1,36 +1,56 @@
-#sidebar .link h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
-}
 #sidebar {
     position: fixed;
     height: 80px;
     width: 100%;
-    background: rgba( 0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     
     display: grid;
     grid-auto-columns: 1fr 1fr;
     grid-template-areas: "logo link";
 }
 
-.logo {
+#sidebar .logo {
     grid-area: logo;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.logo h1 {
-    font-family: 'Libre Barcode 39 Text', cursive;
-    font-size: 48px;
-    font-weight: 500;
+#sidebar .logo h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
 }
 
-.link {
+#sidebar .logo p {
+    font-family: 'Ubuntu Mono', cursive;
+    font-style: Italic;
+    font-weight: bold 400;
+    font-size: 18px;
+    color: white;
+    text-shadow: 0.1em 0.01em 0.1em black;
+}
+
+#sidebar .link h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+
+#sidebar .link {
     grid-area: link;
     display: flex;
     align-items: center ;
     justify-content: space-around ;
+}
+
+#sidebar .link svg {
+    margin-right: 25px;
 }
 
 @media(max-width: 1000px) {
@@ -38,11 +58,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 10px;
+        padding-bottom: 15px;
     }
 
-    .logo h1{
-        font-size: 38px;
+    #sidebar .logo h1 {
+        font-size: 28px;
     }
 
     .link h1 {
